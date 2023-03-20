@@ -217,7 +217,12 @@ header.shadow {
   font-weight: 400;
   margin-left: 1rem;
 }
-
+.information .info-box a{
+  color: var(--text-color);
+}
+.information .info-box span a{
+  color: var(--text-color);
+}
 .skills-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -240,15 +245,29 @@ header.shadow {
   padding-left: 4rem;
   object-position: center;
 }
-.board{
-    padding-top:60px ;
-    position: absolute;
+.skills-container .board{
+    clear: both;
     display: flex;
     font-size: 15px;
   font-weight: 600;
   color: var(--main-color);
 }
 
+.bars-box1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.bars-box1 h3,
+span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 .bars-box {
   position: relative;
   display: flex;
@@ -491,6 +510,7 @@ form textarea {
     box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
     transition: 0.2s ease;
     text-align: center;
+    width: auto;
   }
 
   .navbar.active {
@@ -575,7 +595,9 @@ form textarea {
 
   .information .info-box span {
     font-size: 1rem;
+    
   }
+
 
   .contact-form form {
     width: 300px;
