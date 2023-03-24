@@ -568,9 +568,12 @@ form textarea {
     display: flex;
     justify-content: center;
   }
-
+  
   .contact-form form {
     width: 300px;
+  }
+  .contact-form .information{
+    width: auto;
   }
 
   .contact-button {
@@ -578,7 +581,7 @@ form textarea {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
   :root {
     --big-font: 1.7rem;
     --medium-font: 1.1rem;
@@ -596,6 +599,16 @@ form textarea {
   .information .info-box span {
     font-size: 1rem;
     
+  }
+  .services-box{
+    width:auto;
+    
+  }
+  .contact-form .information{
+    width: auto;
+  }
+  .contact-form .information .info-box{
+    width: auto;
   }
 
 
