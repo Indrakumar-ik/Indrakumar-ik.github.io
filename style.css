@@ -303,15 +303,15 @@ span {
 }
 
 .html-bar {
-  width: 80%;
+  width: 70%;
 }
 
 .css-bar {
-  width: 60%;
+  width: 85%;
 }
 
 .js-bar {
-  width: 70%;
+  width: 65%;
 }
 
 .react-bar {
@@ -323,7 +323,9 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
   padding-top: 5%; 
-  padding-bottom: 10%;
+  padding-bottom: 50%;
+  flex-wrap: wrap;
+
   justify-content: space-around;
   gap: 1rem;
   margin-top: 1rem;
@@ -332,6 +334,7 @@ span {
 .services-box {
   padding: 20px;
   width: 360px;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,7 +360,7 @@ span {
 
 .services-box .bx {
   padding-top: 2rem;
-  font-size: 54px;
+  font-size: 44px;
   color: var(--main-color);
 }
 
@@ -568,12 +571,9 @@ form textarea {
     display: flex;
     justify-content: center;
   }
-  
+
   .contact-form form {
     width: 300px;
-  }
-  .contact-form .information{
-    width: auto;
   }
 
   .contact-button {
@@ -581,7 +581,7 @@ form textarea {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 340px) {
   :root {
     --big-font: 1.7rem;
     --medium-font: 1.1rem;
@@ -599,16 +599,6 @@ form textarea {
   .information .info-box span {
     font-size: 1rem;
     
-  }
-  .services-box{
-    width:auto;
-    
-  }
-  .contact-form .information{
-    width: auto;
-  }
-  .contact-form .information .info-box{
-    width: auto;
   }
 
 
